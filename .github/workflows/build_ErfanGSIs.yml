@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://mirrorbits.lineageos.org/full/berkeley/20200422/lineage-16.0-20200422-nightly-berkeley-signed.zip
+  ROM_URL: https://mirrorbits.lineageos.org/full/berkeley/20200610/lineage-16.0-20200610-nightly-berkeley-signed.zip
   ROM_NAME: Generic
   TZ: Asia/Shanghai
 
@@ -56,12 +56,12 @@ jobs:
        - name: Zip GSI  
          run: |
               mkdir final
-              zip -r final/GSI.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/los16.0-kirin-GSI.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
          uses: johnwbyrd/update-release@v1.0.0
          with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/GSI.zip
+          files: final/los16.0-kirin-GSI.zip
           prerelease: false
 
          
