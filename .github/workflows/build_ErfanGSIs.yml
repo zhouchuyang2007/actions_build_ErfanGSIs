@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus7ProOxygen_13.W.37_OTA_037_all_2006051449_b4f440aac7f14183.zip
-  ROM_NAME: OxygenOS
+  ROM_URL: https://dl.google.com/developers/android/rvc/images/factory/blueline-rpb1.200504.018-factory-699e8cac.zip
+  ROM_NAME: Pixel
   TZ: Asia/Shanghai
 
 jobs:
