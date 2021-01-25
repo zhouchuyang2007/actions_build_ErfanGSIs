@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://bigota.d.miui.com/V12.20.7.21.PCOCNXM/miui_GINKGO_V12.20.7.21.PCOCNXM_103aa0209f_10.0.zip
+  ROM_URL: https://bigota.d.miui.com/20.12.9/miui_GINKGO_20.12.9_7c5ed1cb0b_10.0.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -61,8 +61,8 @@ jobs:
          uses: johnwbyrd/update-release@v1.0.0
          with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/GSI.zip
-          prerelease: false
+          files: final/miui_GINKGO_20.12.9_Android10_GSI.zip
+          prerelease: true
 
          
             
